@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="contain">
+  <view class='top'>
+    <view class='text' wx:if='{{value.length}}'>
+      {{num}}
+    </view>
+  </view>
+  <view class='bottom' bindtap='chose'>
+    <view class='item'>
+      <view class='item-li color' catchtap='clear'>AC</view>
+      <view class='item-li' data-num='7'>7</view>
+      <view class='item-li' data-num='4'>4</view>
+      <view class='item-li' data-num='1'>1</view>
+      <view class='item-li' catchtap='yu'>%</view>
+    </view>
+    <view class='item'>
+      <view class='item-li' catchtap='del'>DEL</view>
+      <view class='item-li'  data-num='8'>8</view>
+      <view class='item-li' data-num='5'>5</view>
+      <view class='item-li' data-num='2'>2</view>
+      <view class='item-li' data-num='0'>0</view>
+      </view>
+    <view class='item'>
+      <view class='item-li' catchtap='division'>÷</view>
+      <view class='item-li' data-num='9'>9</view>
+      <view class='item-li' data-num='6'>6</view>
+      <view class='item-li' data-num='3'>3</view>
+      <view class='item-li' catchtap='point'>.</view>
+      </view>
+    <view class='item'>
+      <view class='item-li' catchtap='multipl'>x</view>
+      <view class='item-li' catchtap='plucut'>-</view>
+      <view class='item-li' catchtap='add'>+</view>
+      <view class='item-li item-li2 ' catchtap='finalnum'>=</view>
+      </view>
+  </view>
+</view>
